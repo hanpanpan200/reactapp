@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
   root 'pages#index'
 
-  resources :comment
+  resources :comments
 
 end
