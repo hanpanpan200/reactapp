@@ -108,7 +108,13 @@ render: function() {
 }
 });
 
-React.render(
-<CommentBox url="comments.json" pollInterval={2000} />,
-    document.getElementById('content')
-);
+//React.render(
+//<CommentBox url="comments.json" pollInterval={2000} />,
+//    document.getElementById('content')
+//);
+
+$(document).ready(function () {
+    React.render(
+        <CommentBox url="comments.json" pollInterval={2000} />,document.getElementById('content')
+    );
+});
